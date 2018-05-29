@@ -5,6 +5,7 @@ const assignments = [
   { label: 'Midterm', url: 'midterm' },
   { label: 'Week 6', url: 'week06' },
   { label: 'Week 7', url: 'week07' },
+  { label: 'Week 8', url: 'week08' },
 ];
 
 if (document.currentScript.hasAttribute('homepage')) {

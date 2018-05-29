@@ -43,7 +43,7 @@ body {
 }
 
 .links {
-  max-width: 440px;
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
