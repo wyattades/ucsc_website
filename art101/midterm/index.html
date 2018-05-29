@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Week 4</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title"><a href="https://wyattades.github.com/generative-line-art">Generative Line Art</a></h1>
+      <p class="subtitle">Midterm Project</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        For the lines, we wanted them to appear to make a 3D shape, so through trial and error we came up with an algorithm that made them move randomly and fake a 3D shape. Although this doesn't always work perfectly, the best examples of this are in the Examples Page.
+      </p>
+      <p>
+        Another important consideration was what drawing library to use. We ended up using Two.js because it was simple and easy to pick up. Since there was not much time to make the project, we wanted to spend as little time as possible learning the technologies.
+      </p>
+      <p>
+        We wanted to make it really easy to customize how the art turned out, so we emphasized having as many different controls as possible. dat.gui did a lot of the work for us, so we could just take the value stored in the controls and have that be a variable in the JS that generates the lines.
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        One of the main challenges of the project was coming up with the correct math to draw the lines so that they didn't overlap and looked the way we wanted them to. We ended up having to use some algebra to calculate the distance between the lines using their slopes.
+      </p>
+      <p>
+        Another challenge was animating the lines, originally we wanted to animate them so they were constantly moving. This ended up being too difficult so we only animated them as they were being drawn.
+      </p>
+      <p>
+        A smaller challenge was having the art download correctly, when we tried to export it the file would break. After some debugging, we realized the issue was with the meta data we put in. When the meta data was fixed the file could be viewed correctly.
+      </p>
+    </section>
+    <section>
+      <h2>Technologies & Acknowledgements</h2>
+      <h3>Technologies</h3>
+      <ul>
+        <li>JavaScript, HTML, CSS</li>
+        <li><a href="https://two.js.org/">Two.js</a>: 2D drawing API</li>
+        <li><a href="https://github.com/dataarts/dat.gui">dat.gui</a>: GUI for changing JavaScript variables</li>
+      </ul>
+      <h3>Acknowledgements</h3>
+      <ul>
+        <li><a href="https://process.studio/works/">Moritz Resl and Martin Grödl</a>: inspiration</li>
+        <li><a href="http://carlkrull.dk/">Karl Crull</a>: inspiration</li>
+        <li><a href="http://img.inconvergent.net/generative/#top">Anders Hoff</a>: inspiration</li>
+      </ul>
+    </section>
+    <section>
+      <div class="buttons">
+        <a class="big-button" href="https://wyattades.github.com/generative-line-art">View the Project!</a>
+      </div>
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="https://wyattades.github.com/generative-line-art">Project</a></li>
+        <li><a href="https://github.com/wyattades/generative-line-art">Source</a></li>
+        <li><a href="https://people.ucsc.edu/~lnwhite/art101/midterm">Partner: <i>Lee White</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

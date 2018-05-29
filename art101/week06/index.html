@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Week 6</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+  <script src="todolist.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title">Todo List App</h1>
+      <p class="subtitle">Week 6</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        The design is the same as the previous week's, but I had to add some styling
+        for the TodoList items.
+      </p>
+      <p>
+        Also, I decided to make <code>#input</code> a <code>form</code> element so it would capture ENTER
+        key presses as well as clicking submit.
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        I was mainly challenged by the fact that we were expected to use <code>innerHtml</code>
+        to set the contents of <code>#output</code>. If this were the case, I wouldn't know how
+        to capture click events on the remove and toggle buttons on each todolist item.
+        Instead, I decided to create all elements with <code>document.createElement()</code>
+        so I could add event listeners easily. This was a little more verbose, but fixed
+        my problem and is actually much more computationaly efficient than using <code>innerHtml</code>.
+      </p>
+      <p>
+        Another big challenge was <strong>not</strong> using jQuery, which probably would have made my life easier.
+      </p>
+    </section>
+    <section>
+      <h2>Todo List</h2>
+      <form id="input" class="buttons">
+        <input type="text" placeholder="Add a New Item"/>
+        <button type="submit" class="big-button">Add</button>
+      </form>
+      <div class="code-block full-height">
+        <code id="output" class="numbered">
+        </code>
+      </div>
+      <!-- <p class="code-source"><a href="todolist.js">View Source</a></p> -->
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="todolist.js">JavaScript</a></li>
+        <li><a href="../assignments.css">CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

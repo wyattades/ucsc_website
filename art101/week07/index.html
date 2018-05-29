@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Week 7</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title">Ajax Info Fetcher</h1>
+      <p class="subtitle">Week 7</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        My page's design is the same as the previous week's.
+      </p>
+      <p>
+        My code consists of fetching a data array from an API when the page loads (I only have to do this once because
+        the response never changes). Then, I choose a random element from that array to display in 
+        <code>#output</code> every time the button is clicked. Also, the API returns JSON and jQuery automatically parses
+        it into a JavaScript array so the API response is easy to work with.
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        I've worked with APIs and Ajax before, so this assignment wasn't too difficult.
+        The hardest part was definitely finding a cool API that responded with JSON and didn't
+        throw a <code>Access-Control-Allow-Origin</code> error.
+      </p>
+    </section>
+    <section>
+      <h2>Studio Ghibli Movies API</h2>
+      <div class="buttons">
+        <button class="big-button" id="random-movie">Get a Movie!</button>
+      </div>
+      <div class="code-block full-height">
+        <code id="output">
+        </code>
+      </div>
+      <p class="code-source"><a href="index.js">View Source</a></p>
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="index.js">JavaScript</a></li>
+        <li><a href="../assignments.css">CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

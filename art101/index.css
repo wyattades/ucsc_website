@@ -1,0 +1,74 @@
+/* Animation keyframes: */
+@keyframes rainbow { 
+  0% { background-position: 0% 80% }
+  50% { background-position: 100% 20% }
+  100% { background-position: 0% 80% }
+}
+@keyframes rotating {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Colors taken from https://codepen.io/nohoid/pen/kIfto */
+  background: linear-gradient(120deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease infinite;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: white;
+  /* Some arbitrary box shadows */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s;
+}
+.container:hover {
+  /* Some darker box shadows when hovered */
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.14), 0 10px 4px -6px rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.12);
+}
+
+.links {
+  max-width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px;
+}
+.links .container {
+  margin: 0;
+}
+.links a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.subtitle {
+  margin: 4px;
+  color: #666;
+}
+
+#portrait {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  transition: border-color;
+}
+#portrait:hover {
+  cursor: not-allowed;
+  border-color: black;
+  animation: rotating 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+}

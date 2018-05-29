@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Week 3</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title">Fizzbuzz Project</h1>
+      <p class="subtitle">Week 3</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        My JavaScript code was relatively straightforward. I first wrote a loop that
+        iterated from 1 to 200, which contained a call to <code>document.write()</code>.
+        If the index of the loop was a multiple of 3, 5, or 7 (which I tested with modulo),
+        then I appended 'Fizz', 'Buzz', or 'Boom' to a string variable. I didn't use
+        <code>if else</code> for these conditions because they are not mutually exclusive.
+        Then if the variable was empty, print the index of the loop, else print the variable
+        followed by an `!`.
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        I had trouble figuring out where to put my <code>script</code> tag. At first I
+        put it in the <code>head</code>, thinking that <code>document.write()</code>
+        would print to the end of <code>body</code>. This broke the webpage, but I was later
+        able to figure out that <code>document.write()</code> writes to the element
+        in which its <code>script</code> is located.
+      </p>
+    </section>
+    <section>
+      <h2>JavaScript Output</h2>
+      <div class="code-block">
+        <code>
+          <script src="fizzbuzz.js"></script>
+        </code>
+      </div>
+      <p class="code-source"><a href="fizzbuzz.js">View Source</a></p>
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="fizzbuzz.js">JavaScript</a></li>
+        <li><a href="../assignments.css">CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

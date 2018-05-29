@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Week 4</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title">JS Functions</h1>
+      <p class="subtitle">Week 4</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        My JavaScript design consisted of functions to perform three simple tasks:
+        return a random cat fact from a predefined array,
+        return a string of html for a random image of a cat (from `unsplash.me`),
+        and set the <code>innerHtml</code> of the element with <code>id="js-output"</code> with the
+        output of the previous two functions.
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        I didn't have trouble with the majority of the JavaScript. The only difficult portion was
+        figuring out how to load a random image of a cat. After some research, I found that I can
+        use the url `source.unsplash.me` to get a random image!
+        After some trial and error, the correct url for fetching a random image of a cat is:<br/>
+        <code>https://source.unsplash.me/collection/[collectionId]/[width]x[height]?sig=[randomIndex]</code><br/>
+        where <code>collectionId</code> is the id of a collection of cats<br/>
+        and <code>randomIndex</code> is a number between 0 and the size of the collection.
+      </p>
+    </section>
+    <section>
+      <h2>JavaScript Output</h2>
+      <div class="code-block full-height">
+        <code id="js-output">
+        </code>
+      </div>
+      <p class="code-source"><a href="index.js">View Source</a></p>
+      <div class="buttons">
+        <button class="big-button" onclick="javascript:main()">Click Me!</button>
+      </div>
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="index.js">JavaScript</a></li>
+        <li><a href="../assignments.css">CSS</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

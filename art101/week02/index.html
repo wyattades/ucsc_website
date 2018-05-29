@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wyatt Ades ART101 - Week 2</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <div>
+      <h1>Wow it's a Form!</h1>
+      <form action="https://www.hashemian.com/tools/form-post-tester.php" method="POST" class="container">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="field">
+          <label>Class Standing</label>
+          <input type="radio" id="class1" name="school_year" value="freshman" required>
+          <label for="class1">Freshman</label>
+          <br/>
+          <input type="radio" id="class2" name="school_year" value="sophomore">
+          <label for="class2">Sophomore</label>
+          <br/>
+          <input type="radio" id="class3" name="school_year" value="junior">
+          <label for="class3">Junior</label>
+          <br/>
+          <input type="radio" id="class4" name="school_year" value="senior">
+          <label for="class4">Senior</label>
+        </div>
+        <div class="field">
+          <label>Hogwarts House</label>
+          <select name="hogwarts_house" required>
+            <option value="">Select a House</option>
+            <option value="hufflepuff">Hufflepuff</option>
+            <option value="gryffindor">Gryffindor</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="slytherin">Slytherin</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="optional">Deepest Darkest Secret</label>
+          <textarea name="secret"></textarea>
+        </div>
+        <div class="field">
+          <label>Select Your Favorite Animals</label>
+          <input type="checkbox" id="animals1" name="animals" value="feline">
+          <label for="animals1">Feline</label>
+          <br/>
+          <input type="checkbox" id="animals2" name="animals" value="cat">
+          <label for="animals2">Cat</label>
+          <br/>
+          <input type="checkbox" id="animals3" name="animals" value="kitten">
+          <label for="animals3">Kitten</label>
+          <br/>
+          <input type="checkbox" id="animals4" name="animals" value="danger_kitten">
+          <label for="animals4">Danger Kitten</label>
+          <br/>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div>
+      <h1>Wow it's PseudoCode!</h1>
+      <pre class="container">
+<strong>How to Make a Flavorful Burger:</strong><br/>
+(If you don't have any of the following ingredients, substitute something similar)<br/>
+1. Mold ground beef into the shape of a patty and make sure it's about a centimeter thick
+2. Rub in a generous amount of salt and pepper on both sides
+3. Heat a frying pan to medium-high and add a light layer of vegetable oil (or use a grill if you own one!)
+4. Fry the patty. After about a minute on each side, wipe some yellow mustard on both sides. Continue frying (and flipping occasionaly) until patty is medium well
+5. Toast a brioche bun, or whatever bread you have
+6. Spread mayonnaise and ketchup on one of the buns
+7. Combine buns, fresh spinach, patty, and some sauteed mushrooms for a delicious home-made burger!
+      </pre>
+    </div>
+    <a id="go-home" href="..">⟵ Go Home</a>
+  </body>
+</html>
