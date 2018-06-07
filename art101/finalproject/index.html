@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wyatt Ades ART101 - Final Project</title>
+  <link rel="stylesheet" type="text/css" href="../assignments.css"/>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h1 class="title"><a href="https://wyattades.github.com/generative-line-art/poly">Generative Poly Art</a></h1>
+      <p class="subtitle">Final Project</p>
+    </section>
+    <section>
+      <h2>Design</h2>
+      <p>
+        We wanted to build off the idea of our midterm but (literally) add another dimension by making the art generate triangles instead of lines. This would make it easier to get the illusion of 3D shapes that we initially wanted.
+      </p>
+      <p>
+        The first version we did was the ‘tunnel’ version, where triangles are drawn successively inside of each other with the color getting darker. This worked well, but there were not many things that we could create custom controls for.
+      </p>
+      <p>
+        The second version is the ‘grid’ version. There is a grid of points that are the basis for triangles. The points are then moved around a random value to make the triangles look 3D. The colors of the triangles are selected based on one color the user picks and a range of colors generated using linear interpolation.
+      </p>
+      <p>
+        The GUI is the same base as the midterm, just with different options that the user can change for each version (‘tunnel’ vs. ‘grid’).
+      </p>
+    </section>
+    <section>
+      <h2>Challenges</h2>
+      <p>
+        One challenge was getting the correct color values for the triangles. The way we decided to change the colors was based on HSL color codes, but Two.js required the colors to be Hex codes, so we had to convert between the different systems frequently. Color was also difficult because we ended up deciding to use linear interpolation to generate the colors, which was difficult to wrap our minds around and to get to look aesthetically pleasing.
+      </p><p>
+        Another challenge was not having gaps between the triangles in the grid. Initially, we could make the grid but there was black space between the shapes. We never figured out why there was initially the spaces, but we fixed it by adding a stroke to the outside of the shapes that was either the same color as the shape or the color the user picked.
+      </p>
+    </section>
+    <section>
+      <h2>Technologies & Acknowledgements</h2>
+      <h3>Technologies</h3>
+      <ul>
+        <li>JavaScript, HTML, CSS</li>
+        <li><a href="https://two.js.org/">Two.js</a>: 2D drawing API</li>
+        <li><a href="https://github.com/wyattades/dat.gui">dat.gui</a>: GUI for changing JavaScript variables</li>
+      </ul>
+      <h3>Acknowledgements</h3>
+      <ul>
+        <li><a href="https://process.studio/works/">Moritz Resl and Martin Grödl</a>: inspiration</li>
+        <li><a href="https://trianglify.io/">Trianglify</a>: Inspiration</li>
+        <li><a href="https://www.illustrationweb.us/artists/LiamBrazier/view">Liam Bezier</a>: Inspiration</li>
+      </ul>
+    </section>
+    <section>
+      <div class="buttons">
+        <a class="big-button" href="https://wyattades.github.com/generative-line-art/poly/">View the Project!</a>
+      </div>
+    </section>
+  </div>
+  <nav>
+    <div class="container row-spacy">
+      <ul>
+        <li><h1><a href="..">Art 101</a></h1></li>
+        <li><a href="..">Home</a></li>
+        <li class="dropdown">
+          <a>Assignments</a>
+          <ul>
+            <script src="../assignments.js"></script>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="https://wyattades.github.com/generative-line-art/poly/">Project</a></li>
+        <li><a href="https://github.com/wyattades/generative-line-art">Source</a></li>
+        <li><a href="https://people.ucsc.edu/~lnwhite/art101/final">Partner: <i>Lee White</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

@@ -6,6 +6,7 @@ const assignments = [
   { label: 'Week 6', url: 'week06' },
   { label: 'Week 7', url: 'week07' },
   { label: 'Week 8', url: 'week08' },
+  { label: 'Final', url: 'finalproject' },
 ];
 
 if (document.currentScript.hasAttribute('homepage')) {
